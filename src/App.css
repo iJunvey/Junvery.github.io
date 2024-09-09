@@ -1,0 +1,22 @@
+/* index.css */
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1; /* Allow #root to grow and take available space */
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  overflow-y: auto; /* Enable scrolling for overflow */
+}

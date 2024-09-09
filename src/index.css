@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.cdnfonts.com/css/candy-beans');
+/* Include Tailwind CSS base styles, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the Poppins font to the body element */
+html, body, #root {
+ /* font-family: 'Poppins', sans-serif; */
+
+  font-family: 'Candy Beans', sans-serif;
+}
+
+/* Keyframes for continuous scrolling */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move half the width to loop seamlessly */
+}
+}
+
+/* Carousel animation and styling */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  animation: slide 30s linear infinite;
+}
+.cloud {
+  position: absolute;
+  opacity: 0.7;
+  transition: transform 0.1s linear;
+}
